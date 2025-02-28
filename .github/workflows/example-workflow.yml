@@ -12,5 +12,8 @@ jobs:
             - name: Decir hola
               run: echo "Hola Mundo"
 
+            - name: Esperar
+              run: sleep 10
+
             - name: Decir Adiós
               run: echo "Adiós"
