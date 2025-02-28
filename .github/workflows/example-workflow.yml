@@ -1,0 +1,16 @@
+name: Example Workflow
+
+on:
+    push:
+        branches:
+            feature-0001-mijangos
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: Decir hola
+              run: echo "Hola Mundo"
+
+            - name: Decir Adiós
+              run: echo "Adiós"
