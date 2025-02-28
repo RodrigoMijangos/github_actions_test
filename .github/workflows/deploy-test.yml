@@ -5,7 +5,6 @@ on:
         branches: 
             - develop
         types: [opened, reopened, synchronize]
-        if: github.event.pull_request.draft == false
         
     
     push:
@@ -14,6 +13,7 @@ on:
 
 jobs:
     deploy:
+        if: github.event.pull_request.draft == false
         runs-on: ubuntu-latest
         steps:
             - name: Checkout Code
